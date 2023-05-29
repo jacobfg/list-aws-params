@@ -4,10 +4,6 @@ FROM python:3.9-slim-buster
 # Install dependencies
 RUN pip install boto3
 
-RUN echo $HOME
-RUN echo $uid $UID
-RUN pwd
-
 # Copy the Python script into the container
 COPY server.py /app/server.py
 
