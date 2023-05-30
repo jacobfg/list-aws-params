@@ -17,5 +17,8 @@ WORKDIR /app
 # Expose the server port
 EXPOSE 8000
 
+# Required
+ENV AWS_DEFAULT_REGION ap-southeast-2
+
 # Run the Python script
 CMD ["python", "server.py"]
